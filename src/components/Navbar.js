@@ -3,9 +3,9 @@ import { Navbar as BootstrapNavbar, Nav, NavDropdown, Form, FormControl, Button 
 
 const Navbar = () => {
   return (
-    <BootstrapNavbar bg="light" expand="lg" fixed="top">
-      <div className="container-fluid p-4">
-        <BootstrapNavbar.Brand href="#">Offcanvas navbar</BootstrapNavbar.Brand>
+    <BootstrapNavbar bg="" expand="lg" fixed="top" className="m-5 navbar">
+      <div className="container-fluid p-2">
+        <BootstrapNavbar.Brand href="#" style={{color: "white", backgroundColor:""}}><b><i>Book_Buzz</i></b></BootstrapNavbar.Brand>
         <BootstrapNavbar.Toggle aria-controls="offcanvasNavbar" />
         <BootstrapNavbar.Collapse id="offcanvasNavbar">
           <Nav className="ml-auto">
@@ -13,10 +13,10 @@ const Navbar = () => {
             <Nav.Link href="#">Link</Nav.Link>
            
           </Nav>
-          <Form className="d-flex">
+          {/* <Form className="d-flex">
             <FormControl type="search" placeholder="Search" className="me-2" aria-label="Search" />
             <Button variant="outline-success" type="submit">Search</Button>
-          </Form>
+          </Form> */}
         </BootstrapNavbar.Collapse>
       </div>
     </BootstrapNavbar>
